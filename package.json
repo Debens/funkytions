@@ -1,0 +1,28 @@
+{
+    "name": "funkytions",
+    "version": "1.0.0",
+    "description": "Playground for functional programming",
+    "author": "Andrew Debens",
+    "license": "MIT",
+    "scripts": {
+        "compile": "yarn build --noEmit",
+        "format": "prettier ./src/**/*",
+        "lint": "eslint --ext .js,.ts",
+        "lint:all": "eslint --ext .js,.ts ./src",
+        "lint:check": "eslint --print-config src/gatsby-node.ts | eslint-config-prettier-check",
+        "lint:staged": "lint-staged"
+    },
+    "devDependencies": {
+        "typescript": "^3.6.3",
+        "@types/node": "^10.12.21",
+        "@types/prettier": "^1.18.2",
+        "@typescript-eslint/eslint-plugin": "^2.2.0",
+        "@typescript-eslint/parser": "^2.2.0",
+        "eslint": "^6.3.0",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-plugin-jest": "^22.17.0",
+        "husky": "^3.0.5",
+        "lint-staged": "^9.2.5",
+        "prettier": "^1.18.2"
+    }
+}
