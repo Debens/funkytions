@@ -1,3 +1,5 @@
+type Func = (...args: any) => any;
+
 type Cast<X, Y> = X extends Y ? X : Y;
 
 type Length<T extends any[]> = T['length'];

@@ -22,11 +22,11 @@ declare namespace Curry {
 
     type Gaps<T extends any[]> = CleanedGaps<PartialGaps<T>>;
 
-    type Curry<F extends (...args: any) => any> = <T extends any[]>(
+    type Curry<F extends Func> = <T extends any[]>(
         ...args: Cast<Cast<T, Gaps<Parameters<F>>>, any[]>
     ) => GapsOf<T, Parameters<F>> extends [any, ...any[]]
         ? Curry<(...args: GapsOf<T, Parameters<F>> extends infer G ? Cast<G, any[]> : never) => ReturnType<F>>
         : ReturnType<F>;
 }
 
-declare function curry<F extends (...args: any) => any>(f: F): Curry.Curry<F>;
+declare function curry<F extends Func>(f: F): Curry.Curry<F>;
