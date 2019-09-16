@@ -1,3 +1,5 @@
+declare type Key = string | number | symbol;
+
 declare type Func<P extends any[] = any, R extends any = any> = (...args: P) => R;
 
 declare type Cast<X, Y> = X extends Y ? X : Y;
