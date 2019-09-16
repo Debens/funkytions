@@ -7,6 +7,8 @@ A playground for function programming
 
 </div>
 
+This is essentially an (un)intensional fork of [TS Toolbelt](https://github.com/pirix-gh/ts-toolbelt)
+
 ### Useful Resources
 
 -   [Thinking in Ramda](http://randycoulman.com/blog/categories/thinking-in-ramda/)
